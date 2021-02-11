@@ -3,10 +3,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-const app = require('express')();
-const functions = require("firebase-function");
-const cors = require('cors');
-app.use(cors())
+// const app = require('express')();
+// const functions = require("firebase-function");
+// const cors = require('cors');
+// app.use(cors())
 
 ReactDOM.render(
   <React.StrictMode>

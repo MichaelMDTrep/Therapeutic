@@ -6,11 +6,10 @@
   "main": "server.js",
   "scripts": {
     "predeploy": "npm run build",
-    "test": "react-scripts test",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "gh-pages -d build"
+    "start": "node backend/server.js",
+    "build": "cd backend && npm install && cd ../client && npm install && npm run build && mv ./build ../backend/public",    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
